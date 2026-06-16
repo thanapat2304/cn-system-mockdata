@@ -1,0 +1,9 @@
+services:
+  cn-system-mockdata:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cn-system-mockdata
+    ports:
+      - "8076:3000"
+    restart: unless-stopped
